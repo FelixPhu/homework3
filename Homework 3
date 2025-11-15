@@ -1,4 +1,8 @@
+//Name: Felix Phu
+
 import java.util.Scanner;
+
+//Correct answers: Right, Door3
 
 public class Main {
 
@@ -39,7 +43,7 @@ public class Main {
                 if (!choice2.equals("Y") && !choice2.equals("N")) {
                     System.out.println("type 'Y' or 'N'.");
                 }
-            }
+        }
             // choice 2 yes
             if (choice2.equals("Y")) {
                 System.out.println("You chose Yes.");
@@ -127,12 +131,13 @@ public class Main {
                     while (!switchdoor.equals("Y") && !switchdoor.equals("N")) {
                         System.out.println("Switch to Door 2? (Y/N):");
                         switchdoor = input.nextLine();
-
+                    
                         if (!switchdoor.equals("Y") && !switchdoor.equals("N")) {
                             System.out.println("type 'Y' or 'N'.");
-
+                        
                             //door3 switchdoor choice
-
+                        }
+                    }
                             if (switchdoor.equals("Y")) {
                                 System.out.println("You switched to Door 2.");
                                 System.out.println("Wrong choice, you get nothing!");
@@ -141,7 +146,7 @@ public class Main {
                                 System.out.println("Congratulations, You win $1,000,000! (how many tries did this take)" );
 
                         }
-                    }
+                    
                 }
             } 
             // choice 2 no
@@ -152,5 +157,4 @@ public class Main {
 
         input.close();
     }
-}
 }
